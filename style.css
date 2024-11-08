@@ -70,7 +70,6 @@ body.dark-mode .card-text {
 
 .beach-slider {
   border-radius: 0.5em;
-  border: 3px solid #ccc !important;
 }
 
 .beach-slider li {
@@ -376,7 +375,6 @@ li:nth-child(6) {
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 3.5em 5.5em;
   }
 
   li:nth-child(2) .details {
@@ -516,7 +514,7 @@ li:nth-child(6) {
   }
 
   .beach-slider li:nth-child(3) {
-    left: 14%;
+    left: 20%;
   }
 
   .beach-slider li:nth-child(4) {
