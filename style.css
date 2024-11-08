@@ -70,6 +70,7 @@ body.dark-mode .card-text {
 
 .beach-slider {
   border-radius: 0.5em;
+  border: 3px solid #ccc !important;
 }
 
 .beach-slider li {
@@ -442,28 +443,49 @@ li:nth-child(6) {
 
 /* Estilos para móviles (480px y 320px) */
 @media (min-width: 321px) and (max-width: 480px) {
+  .navbar-toggler {
+    padding: 0.25em !important;
+  }
+
+  .navbar-brand {
+    margin: 0 !important;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.2em;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.2rem 0.2rem;
+  }
+
   .beach-slider {
     width: 100%;
     height: 100%;
   }
 
-  .beach-slider li .details {
-    top: 22%;
+  .slider-menu {
+    width: 100%;
   }
 
   .beach-slider li {
-    width: 6rem;
-    height: 8rem;
-    top: 63%;
+    width: 3.5rem;
+    height: 7rem;
+    top: 67%;
   }
 
-  .beach-slider li:nth-child(1),
-  .beach-slider li:nth-child(2) {
-    left: 31.5%;
+  .beach-slider li .details {
+    width: 100%;
+    top: 15%;
+  }
+
+  .beach-slider li:nth-child(2) .details {
+    left: 1.5rem;
   }
 
   li:nth-child(2) .details h2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     text-transform: uppercase;
     font-weight: 800;
   }
@@ -488,6 +510,32 @@ li:nth-child(6) {
     margin-top: 0.2rem;
   }
 
+  .beach-slider li:nth-child(2) .details button {
+    padding: 0.2rem 0.4rem;
+    margin-top: 0.2rem;
+  }
+
+  .beach-slider li:nth-child(3) {
+    left: 14%;
+  }
+
+  .beach-slider li:nth-child(4) {
+    left: calc(9% + 5rem);
+  }
+
+  .beach-slider li:nth-child(5) {
+    left: calc(10.9rem);
+  }
+
+  li:nth-child(6) {
+    left: calc(14.9rem);
+  }
+
+  .beach-slider li:nth-child(7) {
+    /* left: calc(50% + 34rem); */
+    opacity: 0;
+  }
+
   .controls button {
     width: 1.5rem;
   }
@@ -498,7 +546,7 @@ li:nth-child(6) {
   }
 
   .controls {
-    bottom: 7rem;
+    bottom: 5rem;
   }
 }
 
@@ -587,6 +635,11 @@ li:nth-child(6) {
 
   li:nth-child(6) {
     left: calc(14.2rem);
+  }
+
+  .beach-slider li:nth-child(7) {
+    /* left: calc(50% + 34rem); */
+    opacity: 0;
   }
 
   .controls button {
