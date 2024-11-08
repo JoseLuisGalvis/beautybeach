@@ -470,7 +470,7 @@ li:nth-child(6) {
   }
 
   .beach-slider li {
-    width: 3.5rem;
+    width: 4.5rem;
     height: 7rem;
     top: 67%;
   }
@@ -546,7 +546,7 @@ li:nth-child(6) {
   }
 
   .controls {
-    bottom: 5rem;
+    bottom: 4rem;
   }
 }
 
