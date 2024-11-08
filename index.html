@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <title>Beauty Beach</title>
+    <!-- CDN de Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Iconos Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Iconscout -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark top-fixed" id="home">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center text-white" href="#">
+            <img
+              src="assets/logo.png"
+              alt="Logo"
+              class="rounded mx-2"
+              loading="lazy"
+            />
+            <h5>Beauty Beach</h5>
+          </a>
+          <button
+            class="navbar-toggler hamMenu"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#corralejo">Corralejo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#sarakiniko">Sarakinino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#stiniva"
+                  >Cala de Stiniva</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#la_digue">La Digue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#cue">Cué</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#tulum">Tulum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#bora">Bora Bora</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#travel">Consejos</a>
+              </li>
+            </ul>
+            <!-- Botón de cambio de modo -->
+            <button class="btn btn-light" type="button" id="darkModeToggle">
+              <i class="fas fa-moon" id="mode-icon"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Slider  -->
+    <section class="beach-slider container vh-100" id="hero">
+      <div class="row align-items-center">
+        <div class="col-12">
+          <div class="slider-menu">
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/borabora.jpeg"
+                alt="Playa de borabora"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>7. Playa Bora Bora</h2>
+                <h3>(Tahití, República francesa)</h3>
+                <p>
+                  El destino más deseado en cualquier lista de «paraísos».
+                  Huahine, Moorea o Bora Bora, en el archipiélago de la
+                  Sociedad, invitan a un viaje distinto cada una: en velero, de
+                  buceo, para disfrutar de playas de coral o para vivir lejos de
+                  la civilización.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#bora';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/corralejo.jpeg"
+                alt="Playa de Corralejo"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>1. Playa de Corralejo</h2>
+                <h3>(Fuerteventura, Islas Canarias)</h3>
+                <p>
+                  Frecuentadas por windsurfistas, las playas de Corralejo tienen
+                  su mayor tesoro en el Parque Natural de las Dunas de Corralejo
+                  y en la Reserva Natural de la Isla de Lobos, cuyos fondos son
+                  muy apreciados por los submarinistas.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#corralejo';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/sarakiniko.jpeg"
+                alt="Playa de Sarakiniko"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>2. Playa Sarakiniko Beach</h2>
+                <h3>(Isla de Milos, Grecia)</h3>
+                <p>
+                  En el archipiélago de las Cícladas, se encuentra este paraíso
+                  natural, que debe su fama mundial a las formas de sus rocas
+                  volcánicas erosionadas durante siglos y que dan sentido a su
+                  apodo de «playa lunar».
+                </p>
+
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#sarakiniko';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/stiniva.jpeg"
+                alt="Playa Cala de Stiniva"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>3. Playa Cala de Stiniva</h2>
+                <h3>(Isla de Vis, Croacia)</h3>
+                <p>
+                  Escondida entre formaciones de roca calcárea que la vuelven
+                  casi invisible desde el mar, esta playa de piedras blancas se
+                  cuenta entre las más atractivas de la Costa Dálmata croata.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#stiniva';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/La_digue.jpeg"
+                alt="Playa La Digue"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>4. Playa La Digue</h2>
+                <h3>(Seychelles)</h3>
+                <p>
+                  Grandes bloques de granito se esparcen por la arena y la
+                  orilla de las playas de esta isla con forma de lágrima. Sin
+                  casi alejarse de la orilla y equipados con unas gafas de
+                  buceo, se ven corales y peces tropicales.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#la_digue';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/cue.jpeg"
+                alt="Playa de Cué"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>5. Playa de Cué</h2>
+                <h3>(Llanes, Asturias)</h3>
+                <p>
+                  Hasta 40 playas se reparten por el litoral del concejo de
+                  Llanes, una franja declarada Paisaje Protegido de la Costa
+                  Oriental asturiana donde se pueden encontrar algunas de las
+                  mejores playas de Asturias.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#cue';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+            <li class="slider-li">
+              <!-- Imagen de fondo como etiqueta <img> -->
+              <img
+                src="/assets/tulum.jpeg"
+                alt="Playa de Tulum"
+                class="img-fluid rounded"
+                loading="lazy"
+                style="object-fit: cover; width: 100%; height: 100%"
+              />
+              <div class="details">
+                <h2>6. Playa Tulum</h2>
+                <h3>(Yucatán, México)</h3>
+                <p>
+                  Tulum (Yucatán, México) Las ruinas mayas de la ciudad de Tulum
+                  y la proximidad de la Barrera de Coral del Caribe hacen que
+                  muchos consideren esta playa como la más bonita de la
+                  península de Yucatán.
+                </p>
+                <button
+                  class="btn btn-order"
+                  onclick="window.location.href='#tulum';"
+                >
+                  Show more...
+                </button>
+              </div>
+            </li>
+          </div>
+          <div class="controls">
+            <button class="prev">
+              <i class="uil uil-arrow-circle-left"></i>
+            </button>
+            <button class="next">
+              <i class="uil uil-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de Detalle de las Playas -->
+    <!-- Sección Corralejo 1 -->
+    <div id="corralejo" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/corralejo1.webp"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/corralejo2.webp"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/corralejo3.webp"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/corralejo4.webp"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de texto -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de Corralejo (Fuerteventura, Islas Canarias)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            Largos arenales colorean de tonos dorados el litoral norte de
+            Fuerteventura, una de las zonas más seductoras y con mayor valor
+            ecológico de las Canarias. Frecuentadas por windsurfistas, las
+            playas de Corralejo tienen su mayor tesoro en el Parque Natural de
+            las Dunas de Corralejo y en la Reserva Natural de la Isla de Lobos,
+            cuyos fondos son muy apreciados por los submarinistas. Ese es el
+            secreto que eleva a una de las mejores playas de España en el altar
+            playero mundial. En el otro extremo de Fuerteventura, la playa de
+            Costa Calma se alarga casi dos kilómetros por una franja que, con
+            marea baja, puede recorrerse de punta a punta.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalCorralejo"
+          >
+            Ubicación...
+          </button>
+        </div>
+
+        <!-- Modal de ubicación Corralejo -->
+        <div
+          class="modal fade"
+          id="mapModalCorralejo"
+          tabindex="-1"
+          aria-labelledby="mapModalCorralejo"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mapModalStinivaLabel">
+                  Ubicación de la Playa de Corralejo
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13994.569925820135!2d-13.865438531386047!3d28.7302286886291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4634e3ac34728f%3A0x77e9504a83d8947!2s35660%20Corralejo%2C%20Las%20Palmas%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1730985788854!5m2!1ses-419!2sar"
+                  width="750"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Sarakiniko 2 -->
+    <div id="sarakiniko" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de texto (ahora a la izquierda) -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de Sarakiniko Beach (Milos, Grecia)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            Sarakiniko, una de las playas más famosas de Milos, Grecia, es
+            conocida por sus formaciones rocosas blancas y sus aguas
+            cristalinas. La playa ofrece un paisaje surrealista que parece de
+            otro planeta, lo que la convierte en un destino popular para
+            turistas y fotógrafos.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalSarakiniko"
+          >
+            Ubicación...
+          </button>
+        </div>
+
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/sarakiniko1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/sarakiniko2.jpg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/sarakiniko3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/sarakiniko4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de ubicación Sarakiniko -->
+      <div
+        class="modal fade"
+        id="mapModalSarakiniko"
+        tabindex="-1"
+        aria-labelledby="mapModalSarakiniko"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLaDigueLabel">
+                Ubicación de Sarakiniko
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d565.1823286773159!2d24.458313071462655!3d36.742873056746205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1498e099a99968d1%3A0x5d7b410fc19e9c1a!2sSarakiniko%20Beach!5e0!3m2!1ses-419!2sar!4v1730985997892!5m2!1ses-419!2sar"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Stiniva 3 -->
+    <div id="stiniva" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/stiniva1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/stiniva2.jpg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/stiniva3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/stiniva4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de texto -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa Cala de Stiniva (Milos, Croacia)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            Stiniva es una de las playas más impresionantes de Croacia, famosa
+            por su acceso estrecho entre acantilados que se abre a una cala de
+            aguas cristalinas. Rodeada por formaciones rocosas únicas, esta
+            playa es ideal para quienes buscan un paisaje natural intacto.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalStiniva"
+          >
+            Ubicación...
+          </button>
+        </div>
+
+        <!-- Modal de ubicación Stiniva -->
+        <div
+          class="modal fade"
+          id="mapModalStiniva"
+          tabindex="-1"
+          aria-labelledby="mapModalStiniva"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="mapModalStinivaLabel">
+                  Ubicación de la Playa de Stiniva
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182.30957800253807!2d16.171458536429036!3d43.02137121808015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13359608cbde422d%3A0xa99242f02de7b4c0!2sStiniva!5e0!3m2!1ses-419!2sar!4v1730994742037!5m2!1ses-419!2sar"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección La Digue 4 -->
+    <div id="la_digue" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de texto (ahora a la izquierda) -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de La Digue (Seychelles)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            La Digue es famosa por sus impresionantes formaciones rocosas de
+            granito y sus aguas turquesa. Rodeada de palmeras y naturaleza
+            exuberante, es una de las playas más hermosas de Seychelles.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalLaDigue"
+          >
+            Ubicación...
+          </button>
+        </div>
+
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/ladigue1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/ladigue2.jpg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/ladigue3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/ladigue4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de ubicación La Digue -->
+      <div
+        class="modal fade"
+        id="mapModalLaDigue"
+        tabindex="-1"
+        aria-labelledby="mapModalLaDigue"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLaDigueLabel">
+                Ubicación de la Playa de La Digue
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <!-- Contenedor responsivo para el iframe -->
+              <div class="iframe-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63655.070536277286!2d55.733413759962424!3d-4.327797890530593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x231fed2903c6ac59%3A0x286d99ba224821b2!2sLa%20Digue%2C%20Seychelles!5e0!3m2!1ses-419!2sar!4v1730993744134!5m2!1ses-419!2sar"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Cue 5 -->
+    <div id="cue" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/cue1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/cue2.jpeg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/cue3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/cue4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de texto -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de Cue (Asturias, España)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            La Playa de Cue, en Asturias, es un rincón de ensueño rodeado por
+            montañas y acantilados que dan forma a una cala pintoresca. Es ideal
+            para quienes buscan paz, belleza natural y un contacto directo con
+            la naturaleza. Las aguas tranquilas y el paisaje espectacular la
+            convierten en un destino perfecto para disfrutar del aire libre.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalCue"
+          >
+            Ubicación...
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal de ubicación para Cue -->
+      <div
+        class="modal fade"
+        id="mapModalCue"
+        tabindex="-1"
+        aria-labelledby="mapModalLabelCue"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLabelCue">
+                Ubicación de la Playa de Cue
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="iframe-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d609.2510813645526!2d-4.731668710018804!3d43.41667711208785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd49ead23daade85%3A0xa43866e87e1ef8e0!2sPlaya%20de%20Cue!5e0!3m2!1ses-419!2sar!4v1730993356064!5m2!1ses-419!2sar"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Tulum 6 -->
+    <div id="tulum" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de texto -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de Tulum (Riviera Maya, México)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            La Playa de Tulum es un paraíso tropical en la Riviera Maya. Su
+            arena blanca y fina y sus aguas turquesas atraen a viajeros de todo
+            el mundo. Enmarcada por ruinas mayas, esta playa se convierte en un
+            lugar único para relajarse, nadar y disfrutar de la belleza natural.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalTulum"
+          >
+            Ubicación...
+          </button>
+        </div>
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/tulum1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/tulum2.jpg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/tulum3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/tulum4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de ubicación para Tulum -->
+    <div
+      class="modal fade"
+      id="mapModalTulum"
+      tabindex="-1"
+      aria-labelledby="mapModalLabelTulum"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mapModalLabelTulum">
+              Ubicación de la Playa de Tulum
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="iframe-container modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35516.47080223429!2d-87.06766806794796!3d20.661069421676775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e42b641a28fb1%3A0x3a1af5a25b484656!2sPlaya%20Tulum%2C%2077725%20Playa%20del%20Carmen%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1730993010882!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Bora Bora 7 -->
+    <div id="bora" class="container min-vh-100">
+      <div class="col-12 text-end">
+        <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+          >Ir al Inicio</a
+        >
+      </div>
+      <div class="row d-flex align-items-center">
+        <!-- Sección de imágenes en cuadrícula 2x2 -->
+        <div class="col-md-6">
+          <div class="row g-2" data-aos="fade-up">
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/bora1.jpg"
+                  alt="Imagen 1"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/bora2.jpeg"
+                  alt="Imagen 2"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/bora3.jpg"
+                  alt="Imagen 3"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-overlay-container">
+                <img
+                  src="/assets/bora4.jpg"
+                  alt="Imagen 4"
+                  class="img-fluid rounded hover-expand"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sección de texto -->
+        <div class="col-md-6">
+          <h2 class="text-dark mx-3" data-aos="fade-right">
+            Playa de Bora Bora (Polinesia Francesa)
+          </h2>
+          <p class="text-dark mx-3 nos-text" data-aos="fade-right">
+            Bora Bora, en la Polinesia Francesa, es famosa por sus aguas
+            cristalinas, playas de arena blanca y exuberantes paisajes
+            tropicales y sus bungalows. Las vistas del monte Otemanu y la
+            posibilidad de realizar actividades acuáticas como el buceo o el
+            snorkel, convierten a Bora Bora en un lugar único.
+          </p>
+          <h2 class="text-dark mx-3" data-aos="fade-right">Actividades:</h2>
+          <div class="row mx-3" data-aos="zoom-in">
+            <div class="col-md-4 text-center">
+              <i class="fas fa-swimmer fa-2x mb-2"></i>
+              <p>Buceo</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-water fa-2x mb-2"></i>
+              <p>Surf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-wind fa-2x mb-2"></i>
+              <p>Windsurf</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Moto de agua</p>
+            </div>
+            <div class="col-md-4 text-center">
+              <i class="fas fa-ship fa-2x mb-2"></i>
+              <p>Catamarán</p>
+            </div>
+          </div>
+          <button
+            class="btn btn-order mt-1 mx-1"
+            data-bs-toggle="modal"
+            data-bs-target="#mapModalBora"
+          >
+            Ubicación...
+          </button>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="mapModalBora"
+        tabindex="-1"
+        aria-labelledby="mapModalLabelBora"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mapModalLabelBora">
+                Ubicación de la Playa de Bora Bora
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="iframe-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61208.3504180911!2d-151.77555728693773!3d-16.499729132666992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bdbd188a4a98ab%3A0x160a089e92d5ce61!2sBora%20Bora!5e0!3m2!1ses-419!2sar!4v1730992567379!5m2!1ses-419!2sar"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Consejos para el Viaje con Parallax -->
+    <section
+      class="travel-tips container min-vh-75 mt-2 mb-1 parallax"
+      id="travel"
+    >
+      <div class="text-overlay"></div>
+      <div class="row" data-aos="fade-up">
+        <div class="col-12 text-end">
+          <a href="#home" class="btn btn-order mt-1 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+
+        <!-- Sombra oscura de fondo -->
+        <h2 class="text-center mb-2 custom-shadow animated fadeIn">
+          Consejos para tu Viaje
+        </h2>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <!-- Empaque Ligero -->
+          <div class="col-12 col-md-6 col-lg-4 mb-1 text-parallax">
+            <div class="tip-box animated fadeInUp">
+              <div class="tip-icon d-flex align-items-center">
+                <i class="fas fa-suitcase mx-2"></i>
+                <h4>Empaque Ligero</h4>
+              </div>
+              <p>
+                Recuerda que siempre es mejor llevar lo esencial para disfrutar
+                al máximo de tu experiencia sin cargas innecesarias.
+              </p>
+            </div>
+
+            <!-- Protección Solar -->
+
+            <div class="tip-box animated fadeInUp">
+              <div class="tip-icon d-flex align-items-center">
+                <i class="fas fa-sun mx-2"></i>
+                <h4>Protección Solar</h4>
+              </div>
+              <p>
+                El sol puede ser muy fuerte en algunas de estas playas, así que
+                no olvides tu protector solar.
+              </p>
+            </div>
+
+            <!-- Hidratación Constante -->
+
+            <div class="tip-box animated fadeInUp">
+              <div class="tip-icon d-flex align-items-center">
+                <i class="fas fa-water mx-2"></i>
+                <h4>Hidratación Constante</h4>
+              </div>
+              <p>
+                Disfrutar de estas hermosas playas puede ser agotador, así que
+                lleva siempre contigo agua para mantenerte hidratado.
+              </p>
+            </div>
+
+            <!-- Nuevo consejo: Seguridad Personal -->
+
+            <div class="tip-box animated fadeInUp">
+              <div class="tip-icon d-flex align-items-center">
+                <i class="fas fa-shield-alt mx-2"></i>
+                <h4>Seguridad Personal</h4>
+              </div>
+              <p>
+                Asegúrate de guardar tus pertenencias en un lugar seguro y
+                siempre estar atento a tu entorno para evitar cualquier
+                inconveniente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #1c2331"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-between p-4"
+          style="background-color: hsl(16, 100%, 66%)"
+        >
+          <!-- Left -->
+          <div class="me-5">
+            <span>Contáctanos en nuestras RRSS:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container-fluid text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+                <!-- Content -->
+                <img
+                  src="assets/logo.png"
+                  alt="Logo"
+                  class="rounded mx-2 mb-3"
+                  loading="lazy"
+                  width="120"
+                />
+                <h6 class="text-uppercase fw-bold">Beauty Beach</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="
+                    width: 120px;
+                    background-color: hsl(16, 100%, 66%);
+                    height: 3px;
+                  "
+                />
+                <p>Las Mejores Playas del Mundo a un Click de Distancia!</p>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Playas</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="
+                    width: 60px;
+                    background-color: hsl(16, 100%, 66%);
+                    height: 2px;
+                  "
+                />
+                <div class="row d-flex">
+                  <div class="col-6">
+                    <p>
+                      <a href="#corralejo" class="text-white"
+                        >Playa de Corralejo</a
+                      >
+                    </p>
+                    <p>
+                      <a href="#sarakiniko" class="text-white"
+                        >Sarakiniko Beach</a
+                      >
+                    </p>
+                    <p>
+                      <a href="#stiniva" class="text-white">Cala de Stiniva</a>
+                    </p>
+                    <p><a href="#la_digue" class="text-white">La Digue</a></p>
+                  </div>
+                  <div class="col-6">
+                    <p><a href="#cue" class="text-white">Playa de Cué</a></p>
+                    <p><a href="#tulum" class="text-white">Tulum</a></p>
+                    <p><a href="#bora" class="text-white">Bora Bora</a></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Grid column -->
+              <!-- Sección de contacto -->
+              <div class="col-md-4 col-lg-4 col-xl-4 mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contacto</h6>
+                <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="
+                    width: 60px;
+                    background-color: hsl(16, 100%, 66%);
+                    height: 2px;
+                  "
+                />
+                <p><i class="fas fa-home mr-3"></i> PBA, Argentina</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> beautybeach@gmail.com
+                </p>
+                <p><i class="fas fa-phone mr-3"></i> + 54 9 11 34567890</p>
+
+                <!-- Contador de visitas -->
+                <div class="mt-4 d-flex align-items-center">
+                  <h6 class="mb-0 me-2">Visitas al Sitio:</h6>
+                  <!-- El texto "Visitas al Sitio" -->
+                  <h5 id="visitCounter" class="text-white mb-0"></h5>
+                  <!-- El número del contador -->
+                </div>
+              </div>
+
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2024 Copyright:
+          <a class="text-white" href="https://www.beautybeach.com.ar/"
+            >www.beautybeach.com.ar</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <!-- End of .container -->
+
+    <!-- JS de Bootstrap (opcional para componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+
+      // Aquí va el script que lleva el contador
+      // Verifica si existe un contador de visitas en el LocalStorage
+      // Espera a que todo el DOM esté completamente cargado
+      document.addEventListener("DOMContentLoaded", function () {
+        // Verifica si existe un contador de visitas en el LocalStorage
+        if (!localStorage.getItem("visitCounter")) {
+          // Si no existe, inicialízalo en 0
+          localStorage.setItem("visitCounter", 0);
+        }
+
+        // Incrementa el contador
+        let visitCount = parseInt(localStorage.getItem("visitCounter"));
+        visitCount += 1; // Cada vez que se carga la página se incrementa
+
+        // Guarda el nuevo valor en el LocalStorage
+        localStorage.setItem("visitCounter", visitCount);
+
+        // Muestra el contador en el elemento con el id 'visitCounter'
+        document.getElementById("visitCounter").textContent = visitCount;
+      });
+    </script>
+    <script src="/script.js"></script>
+  </body>
+</html>
