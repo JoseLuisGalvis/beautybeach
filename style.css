@@ -524,11 +524,11 @@ li:nth-child(6) {
   }
 
   .beach-slider li:nth-child(5) {
-    left: calc(11rem);
+    left: calc(11.3rem);
   }
 
   li:nth-child(6) {
-    left: calc(15rem);
+    left: calc(15.3rem);
   }
 
   .beach-slider li:nth-child(7) {
