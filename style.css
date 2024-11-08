@@ -441,7 +441,7 @@ li:nth-child(6) {
   }
 }
 
-/* Estilos para móviles (480px y 320px) */
+/* Estilos para móviles (321px y 480px) */
 @media (min-width: 321px) and (max-width: 480px) {
   .navbar-toggler {
     padding: 0.25em !important;
@@ -470,7 +470,7 @@ li:nth-child(6) {
   }
 
   .beach-slider li {
-    width: 4.5rem;
+    width: 4rem;
     height: 7rem;
     top: 67%;
   }
@@ -520,15 +520,15 @@ li:nth-child(6) {
   }
 
   .beach-slider li:nth-child(4) {
-    left: calc(9% + 5rem);
+    left: calc(10% + 5rem);
   }
 
   .beach-slider li:nth-child(5) {
-    left: calc(10.9rem);
+    left: calc(11rem);
   }
 
   li:nth-child(6) {
-    left: calc(14.9rem);
+    left: calc(15rem);
   }
 
   .beach-slider li:nth-child(7) {
